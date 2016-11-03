@@ -32,6 +32,7 @@
 	<message key="plugins.themes.bootstrap3.options.bootstrapTheme.flatly">Flatly</message>
 	<message key="plugins.themes.bootstrap3.options.bootstrapTheme.journal">Journal</message>
 	<message key="plugins.themes.bootstrap3.options.bootstrapTheme.lumen">Lumen</message>
+	<message key="plugins.themes.bootstrap3.options.bootstrapTheme.nsamr">NSAMR</message>
 	<message key="plugins.themes.bootstrap3.options.bootstrapTheme.paper">Paper</message>
 	<message key="plugins.themes.bootstrap3.options.bootstrapTheme.readable">Readable</message>
 	<message key="plugins.themes.bootstrap3.options.bootstrapTheme.sandstone">Sandstone</message>

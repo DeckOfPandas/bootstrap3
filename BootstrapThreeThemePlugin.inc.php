@@ -36,6 +36,7 @@ class BootstrapThreeThemePlugin extends ThemePlugin {
 				'flatly'     => 'plugins.themes.bootstrap3.options.bootstrapTheme.flatly',
 				'journal'    => 'plugins.themes.bootstrap3.options.bootstrapTheme.journal',
 				'lumen'      => 'plugins.themes.bootstrap3.options.bootstrapTheme.lumen',
+				'nsamr'      => 'plugins.themes.bootstrap3.options.bootstrapTheme.nsamr',
 				'paper'      => 'plugins.themes.bootstrap3.options.bootstrapTheme.paper',
 				'readable'   => 'plugins.themes.bootstrap3.options.bootstrapTheme.readable',
 				'sandstone'  => 'plugins.themes.bootstrap3.options.bootstrapTheme.sandstone',
