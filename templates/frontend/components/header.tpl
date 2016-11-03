@@ -39,8 +39,11 @@
 		{* Header *}
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
 
-			{* User profile, login, etc, navigation menu*}
-			<div class="container-fluid">
+
+			<div class="container-fluid" style="background-color:#b4bcc2">  
+
+	
+
 				<div class="row">
 					<ul id="navigationUser" class="nav nav-pills tab-list pull-right" role="navigation" aria-label="{translate|escape key="common.navigation.user"}">
 						{if $isUserLoggedIn}
@@ -95,20 +98,14 @@
 							<li><a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>
 						{/if}
 					</ul>
-				</div><!-- .row -->
-			</div><!-- .container-fluid -->
+				</div>
+			</div>
 
+
+
+			{* User profile, login, etc, navigation menu*}
 			<div class="container-fluid">
-
-				<div class="navbar-header">
-
-					{* Mobile hamburger menu *}
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+				<div class="row" style="background-color:#2C3E50">
 
 					{* Logo or site title. Only use <h1> heading on the homepage.
 					   Otherwise that should go to the page title. *}
@@ -123,7 +120,7 @@
 							{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
 						{/if}
 						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo" style="height:100px; margin-left:25px; margin-top">
 								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
 							</a>
 						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
@@ -142,6 +139,23 @@
 					{else}
 						</div>
 					{/if}
+
+				</div><!-- .row -->
+			</div><!-- .container-fluid -->
+
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+
+					{* Mobile hamburger menu *}
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+
 
 				</div>
 
