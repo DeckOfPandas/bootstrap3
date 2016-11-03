@@ -9,7 +9,6 @@
  *
  *}
 {include file="frontend/components/header.tpl"}
-{include file="frontend/components/header.tpl"} // TODO
 
 <div id="main-site" class="page_index_site">
 
